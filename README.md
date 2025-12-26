@@ -82,10 +82,11 @@ The APK will be generated at `app/build/outputs/apk/debug/app-debug.apk`
 | Endpoint | Description |
 |----------|-------------|
 | `GET /api/v1/weather/current?lat={lat}&lon={lon}` | Get current weather |
-| `GET /api/v1/weather/hourly?lat={lat}&lon={lon}` | Get hourly forecast |
-| `GET /api/v1/weather/daily?lat={lat}&lon={lon}` | Get daily forecast |
-| `GET /api/v1/locations/search?query={query}` | Search locations |
-| `GET /api/v1/locations/autocomplete?query={query}` | Location autocomplete |
+| `GET /api/v1/weather/forecast/hourly?lat={lat}&lon={lon}` | Get hourly forecast |
+| `GET /api/v1/weather/forecast/daily?lat={lat}&lon={lon}` | Get daily forecast |
+| `GET /api/v1/location/search?query={query}` | Search locations |
+| `GET /api/v1/location/autocomplete?query={query}` | Location autocomplete |
+
 
 ## License
 
