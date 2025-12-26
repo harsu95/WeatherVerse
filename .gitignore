@@ -1,0 +1,47 @@
+# Android specific
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# Build outputs
+/build/
+/app/build/
+/backend/build/
+**/build/
+
+# Gradle
+.gradle/
+gradle-8.5/
+*.zip
+!gradle/wrapper/gradle-wrapper.jar
+
+# Local configuration
+local.properties
+*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sensitive files
+*.keystore
+*.jks
+google-services.json
+secrets.properties
+
+# Temp files
+*.tmp
+*.temp
+*.swp
+*~
+
+# Test outputs
+/test-results/
+/coverage/

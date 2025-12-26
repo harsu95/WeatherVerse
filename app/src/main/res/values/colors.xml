@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors (from HTML designs) -->
+    <color name="primary">#1392EC</color>
+    <color name="primary_dark">#0D7BC9</color>
+    <color name="primary_light">#42A9F0</color>
+    
+    <!-- Background Colors -->
+    <color name="background_light">#F6F7F8</color>
+    <color name="background_dark">#101A22</color>
+    
+    <!-- Surface Colors -->
+    <color name="surface_dark">#1A2730</color>
+    <color name="surface_dark_elevated">#243340</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary_light">#111418</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_light">#637588</color>
+    <color name="text_secondary_dark">#93AABF</color>
+    
+    <!-- Weather Condition Colors -->
+    <color name="sunny">#FFC107</color>
+    <color name="cloudy">#90A4AE</color>
+    <color name="rainy">#4FC3F7</color>
+    <color name="stormy">#7E57C2</color>
+    <color name="snowy">#E3F2FD</color>
+    
+    <!-- Metric Card Colors -->
+    <color name="humidity_color">#60A5FA</color>
+    <color name="pressure_color">#2DD4BF</color>
+    <color name="wind_color">#7DD3FC</color>
+    <color name="uv_color">#FB923C</color>
+    
+    <!-- Glass Panel -->
+    <color name="glass_background">#99101A22</color>
+    <color name="glass_border">#14FFFFFF</color>
+</resources>

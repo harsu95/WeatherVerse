@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/onboardingFragment">
+
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.weather.app.ui.onboarding.OnboardingFragment"
+        android:label="Onboarding">
+        <action
+            android:id="@+id/action_onboarding_to_dashboard"
+            app:destination="@id/dashboardFragment"
+            app:popUpTo="@id/onboardingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.weather.app.ui.dashboard.DashboardFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_dashboard_to_search"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_dashboard_to_alerts"
+            app:destination="@id/alertsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecastFragment"
+        android:name="com.weather.app.ui.forecast.ForecastFragment"
+        android:label="Forecast" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.weather.app.ui.settings.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.weather.app.ui.search.SearchFragment"
+        android:label="Search Location" />
+
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.weather.app.ui.alerts.AlertsFragment"
+        android:label="Weather Alerts" />
+
+</navigation>
