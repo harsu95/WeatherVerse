@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: weatherverse-backend
+    env: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    region: oregon
+    plan: free
+    branch: main
+    healthCheckPath: /api/v1/weather/current?lat=0&lon=0
+    envVars:
+      - key: JAVA_TOOL_OPTIONS
+        value: -Xmx256m
