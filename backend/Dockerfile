@@ -10,14 +10,14 @@ COPY gradlew gradlew.bat ./
 # Fix line endings and set permissions
 RUN sed -i 's/\r$//' ./gradlew && chmod +x ./gradlew
 
-# Download dependencies
-RUN ./gradlew dependencies --no-daemon || true
+# Download dependencies (unset JAVA_TOOL_OPTIONS to prevent Render env var from interfering)
+RUN unset JAVA_TOOL_OPTIONS && ./gradlew dependencies --no-daemon || true
 
 # Copy source code
 COPY src ./src
 
 # Build the application
-RUN ./gradlew bootJar --no-daemon
+RUN unset JAVA_TOOL_OPTIONS && ./gradlew bootJar --no-daemon
 
 # Runtime stage
 FROM eclipse-temurin:17-jre-alpine
