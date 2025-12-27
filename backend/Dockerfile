@@ -7,8 +7,11 @@ COPY build.gradle settings.gradle ./
 COPY gradle ./gradle
 COPY gradlew gradlew.bat ./
 
+# Fix line endings and set permissions
+RUN sed -i 's/\r$//' ./gradlew && chmod +x ./gradlew
+
 # Download dependencies
-RUN chmod +x ./gradlew && ./gradlew dependencies --no-daemon || true
+RUN ./gradlew dependencies --no-daemon || true
 
 # Copy source code
 COPY src ./src
